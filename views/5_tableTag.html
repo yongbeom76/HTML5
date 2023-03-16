@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>표 관련 태그</title>
+    <style>
+      * {
+        /* border: 1px dotted gray; */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>기본 표 형식</h1>
+    <table border="1">
+      <caption>
+        <b>라면 종류</b>
+      </caption>
+      <tr>
+        <th>이름</th>
+        <th>제조사</th>
+        <th>매운정도(순함/매움)</th>
+      </tr>
+      <tr>
+        <td>너구리</td>
+        <td>농심</td>
+        <td>순한맛</td>
+      </tr>
+      <tr>
+        <td>진라면</td>
+        <td>오뚜기</td>
+        <td>순한맛</td>
+      </tr>
+      <tr>
+        <td>삼양라면</td>
+        <td>삼양</td>
+        <td>순한맛</td>
+      </tr>
+      <tr>
+        <td>꼬꼬면</td>
+        <td>팔도</td>
+        <td>순한맛</td>
+      </tr>
+    </table>
+
+    <!-- h1{표의 행, 열 합치기} -->
+    <h1>표의 행, 열 합치기</h1>
+    <h3>회원가입 양식</h3>
+
+    <!-- table[border=1] -->
+    <table border="1">
+      <tr>
+        <td width="70px" align="center" rowspan="3">사진</td>
+        <td width="80px">이름</td>
+        <td width="200px"></td>
+      </tr>
+      <tr>
+        <td>연락처</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>주소</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td height="100px">자기소개</td>
+        <td colspan="2"></td>
+      </tr>
+    </table>
+    <h1>실습1</h1>
+    <h3>오늘 기준 누적 확진자 표 만들기</h3>
+    <table border="1">
+      <caption>
+        <b>누적 확진자 현황</b>
+      </caption>
+      <tr>
+        <th width="200px" colspan="4">확진환자</th>
+      </tr>
+      <tr>
+        <td align="center">누적</td>
+        <td align="center" colspan="3">전일대비</td>
+      </tr>
+      <tr>
+        <td rowspan="2">93,263</td>
+        <td>소계</td>
+        <td>국내발생</td>
+        <td>해외유입</td>
+      </tr>
+      <tr>
+        <td>+446</td>
+        <td>427</td>
+        <td>19</td>
+      </tr>
+    </table>
+
+    <hr />
+    <h1>테이블 구조 태그</h1>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>이름</th>
+          <th>나이</th>
+          <th>취미</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- (tr>td*3)*3 -->
+        <tr>
+          <td>홍길동</td>
+          <td>10</td>
+          <td>독서</td>
+        </tr>
+        <tr>
+          <td>고길동</td>
+          <td>15</td>
+          <td>부동산</td>
+        </tr>
+        <tr>
+          <td>김유신</td>
+          <td>20</td>
+          <td>주식투자</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>총 인원</td>
+          <td colspan="2">3명</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <a href="0_index.html">처음으로 돌아가기...</a>
+    <br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br />
+  </body>
+</html>
